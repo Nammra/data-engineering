@@ -1,0 +1,7 @@
+#python_code
+def check(sentence, profanity_word): 
+    res = [all([k in s for k in profanity_word]) for s in sentence] 
+    return [sentence[i] for i in range(0, len(res)) if res[i]] 
+    
+final = check(sentence, profanity_word)
+print (len(final))
